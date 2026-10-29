@@ -24,3 +24,6 @@ Thumbs.db
 output/*
 !output/review2-workbench.png
 *.log
+
+# Vercel project linkage and local deployment artifacts
+.vercel/

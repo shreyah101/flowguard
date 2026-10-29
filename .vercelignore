@@ -1,0 +1,15 @@
+.git
+.vercel
+__pycache__
+**/__pycache__
+.pytest_cache
+pytest-cache-files-*
+tests
+output
+.venv
+venv
+.env*
+.codex
+.agents
+.aws
+*.log

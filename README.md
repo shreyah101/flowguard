@@ -37,11 +37,11 @@ Use `--port 8081` if port 8080 is occupied.
 Install the test dependency and run the suite:
 
 ```powershell
-python -m pip install -r requirements.txt
+python -m pip install -r requirements-dev.txt
 python -m pytest -q
 ```
 
-Verified on 29 October 2026: **85 passed**. The original baseline had 9 tests.
+Verified on 29 October 2026: **89 passed**. The original baseline had 9 tests.
 `pytest.ini` restricts discovery to tests and disables its optional cache, avoiding
 a Windows permissions problem observed with a temporary pytest cache directory.
 
@@ -216,3 +216,17 @@ See `PROJECT_REPORT.md` for algorithms and complexity, `REVIEW2_DEMO.md` for the
 
 Developed for the university Compiler Design project. The implementation and review
 material describe an educational analysis model and its tested limitations.
+
+## Deploy on Vercel
+
+The repository includes `vercel.json` and four Python function entry points in
+`api/`. The HTML/CSS/JavaScript in `flowguard/web` is served as static content;
+`/api/analyze`, `/api/health`, `/api/examples` and `/api/presets` reuse the same
+validated API handler and analyzer used locally. No submitted code is executed.
+Python 3.12 is selected for Vercel; runtime requirements are dependency-free.
+
+Import `shreyah101/flowguard` into the intended Vercel account, keep the repository
+root directory, choose the Other framework preset and deploy with the committed
+configuration. Alternatively, with Vercel CLI authenticated to the intended
+account, run `vercel --prod`. Local Vercel project metadata is ignored by Git.
+Production ownership and the final deployment URL must be verified after deployment.

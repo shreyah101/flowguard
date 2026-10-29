@@ -1,0 +1,12 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "buildCommand": "",
+  "outputDirectory": "flowguard/web",
+  "functions": {
+    "api/*.py": {
+      "maxDuration": 30,
+      "excludeFiles": "{tests/**,output/**,**/__pycache__/**,*.md}"
+    }
+  }
+}

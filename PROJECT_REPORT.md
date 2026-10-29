@@ -171,7 +171,7 @@ rubric: code/shell CRITICAL, query/file HIGH, HTML MEDIUM; no CVSS claim is made
 ## 12. Experimental evaluation
 
 Baseline: `python -m pytest -q` completed with 9 passed and a Windows cache warning.
-After implementation: `python -m pytest -q` completed with **85 passed**.
+After implementation: `python -m pytest -q` completed with **89 passed**.
 The expanded tests cover lexer errors/locations, parser precedence/elif/errors,
 semantic failures, graph edges, literal unreachable paths, strong updates,
 context sanitizers, multiple sources/sinks, loop revisits, user-call returns,

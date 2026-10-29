@@ -1,1 +1,2 @@
-pytest>=8,<10
+# FlowGuard has no third-party runtime dependencies.
+# Install requirements-dev.txt to run the test suite.

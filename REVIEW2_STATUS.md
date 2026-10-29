@@ -66,7 +66,7 @@ external infrastructure was introduced.
 ## Verified tests and commands
 
 - Baseline `python -m pytest -q`: **9 passed**, with a Windows cache warning.
-- Final `python -m pytest -q`: **85 passed**, no skipped tests.
+- Final `python -m pytest -q`: **89 passed**, no skipped tests.
 - `python flowguard_cli.py --all-examples`: all nine outcomes match the manifest.
   Seven examples complete; semantic_error and syntax_error intentionally fail.
 - `python run_demo.py`: completes the primary pipeline and original five examples.
