@@ -1,0 +1,5 @@
+# Command Injection via string concatenation
+raw_cmd = input()
+base = "ping -c 4 "
+full_cmd = base + raw_cmd
+system(full_cmd)

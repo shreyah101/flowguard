@@ -1,0 +1,10 @@
+# Loop Data Flow
+# Taint persists and propagates across loop iterations
+
+data = input()
+payload = ""
+count = 3
+while count > 0:
+    payload = payload + data
+    count = count - 1
+write_file("out.log", payload)

@@ -1,0 +1,10 @@
+# Interprocedural Taint Flow
+# Taint travels into a function through parameters and flows out via return value
+
+def create_command(target):
+    cmd = "curl " + target
+    return cmd
+
+user_url = input()
+final_cmd = create_command(user_url)
+system(final_cmd)

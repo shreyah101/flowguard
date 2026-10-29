@@ -1,0 +1,8 @@
+name = input()
+
+if name:
+    query = name
+else:
+    query = "guest"
+
+execute_query(query)

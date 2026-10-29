@@ -1,0 +1,3 @@
+raw = input()
+clean = sanitize_sql(raw)
+run_command(clean)

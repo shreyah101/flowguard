@@ -1,0 +1,3 @@
+value = input()
+value = "constant"
+execute_query(value)

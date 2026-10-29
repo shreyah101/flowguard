@@ -1,0 +1,26 @@
+# Python bytecode and test caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+pytest-cache-files-*/
+.coverage
+htmlcov/
+
+# Local environments, editor settings and credentials
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+.vscode/
+.idea/
+.codex/
+.agents/
+.aws/
+.DS_Store
+Thumbs.db
+
+# Generated verification output (keep the README screenshot)
+output/*
+!output/review2-workbench.png
+*.log

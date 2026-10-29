@@ -1,0 +1,7 @@
+# Sanitized Safe Flow
+# Taint is neutralized via sanitize() before reaching the sink
+
+raw_user = input()
+clean_user = sanitize(raw_user)
+query = "SELECT * FROM accounts WHERE user = '" + clean_user + "'"
+execute_query(query)

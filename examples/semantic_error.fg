@@ -1,0 +1,4 @@
+flag = input()
+if flag:
+    value = "branch only"
+execute_query(value)
