@@ -9,6 +9,13 @@ and user-defined functions into modeled sensitive operations. It uses its own le
 recursive-descent parser, AST, control-flow graphs, and iterative worklist engine.
 Submitted programs are analyzed as data and are never executed.
 
+## Live application
+
+**[Open FlowGuard on Vercel](https://flowguard-eight.vercel.app)**
+
+Hosted in Shreyah101’s Vercel projects. The live site runs the real Python analyzer
+through Vercel Functions; submitted code is never executed.
+
 ## Workbench preview
 
 ![FlowGuard static analysis workbench](output/review2-workbench.png)
@@ -229,4 +236,6 @@ Import `shreyah101/flowguard` into the intended Vercel account, keep the reposit
 root directory, choose the Other framework preset and deploy with the committed
 configuration. Alternatively, with Vercel CLI authenticated to the intended
 account, run `vercel --prod`. Local Vercel project metadata is ignored by Git.
-Production ownership and the final deployment URL must be verified after deployment.
+Production deployment verified at https://flowguard-eight.vercel.app under
+Shreyah101’s projects. Live health, examples, UI assets, and analysis of the
+slide/sanitizer/command/loop/function/syntax-error examples were checked successfully.

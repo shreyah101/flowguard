@@ -1,8 +1,8 @@
 # FlowGuard Review 2 - factual implementation status
 
 Verified 29 October 2026, on Windows with Python 3.13. The project remains in the
-original workspace and uses the standard library at runtime. No deployment or
-external infrastructure was introduced.
+original workspace and uses the standard library at runtime. A Vercel deployment was subsequently added under Shreyah101’s projects,
+reusing the same analyzer and API without third-party runtime dependencies.
 
 ## Existing project audit
 
@@ -131,3 +131,19 @@ running the application or the verified suite.
 
 The five-stage core demonstration is working. Review readiness does not imply
 support for the unsupported language and analysis features listed above.
+
+## Vercel hosting verification
+
+Production URL: https://flowguard-eight.vercel.app
+Vercel team: Shreyah101's projects; project: flowguard.
+Python 3.12 functions expose analyze, health, examples and presets. Static assets
+come from flowguard/web. Explicit handler subclasses are needed for Vercel's
+function discovery; their HTTP behavior delegates to the tested shared handler.
+The test dependency moved to requirements-dev.txt; requirements.txt has no
+third-party runtime dependencies. Four serverless entrypoint HTTP tests bring
+the verified suite to 89 passing tests.
+
+Live checks: HTML/CSS/JS, health, and nine-example listing returned 200. The
+slide, SQL-sanitized, command, loop and interprocedural cases returned their
+expected findings; syntax_error returned failed analysis. Hosted browser
+verification confirmed the primary analysis completes against the live backend.

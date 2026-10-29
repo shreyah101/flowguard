@@ -1,2 +1,6 @@
-"""Vercel Python function: reuse FlowGuard's validated local API handler."""
-from flowguard.server import FlowGuardHTTPRequestHandler as handler
+"""Vercel discovers this explicit class; shared API behavior stays in FlowGuard."""
+from flowguard.server import FlowGuardHTTPRequestHandler
+
+
+class handler(FlowGuardHTTPRequestHandler):
+    """Expose the existing validated HTTP handler as a Vercel Python function."""
