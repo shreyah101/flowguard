@@ -13,7 +13,7 @@ Submitted programs are analyzed as data and are never executed.
 
 **[Open FlowGuard on Vercel](https://flowguard-eight.vercel.app)**
 
-Hosted in Shreyah101�s Vercel projects. The live site runs the real Python analyzer
+Hosted in Shreyah101’s Vercel projects. The live site runs the real Python analyzer
 through Vercel Functions; submitted code is never executed.
 
 ## Workbench preview
@@ -217,9 +217,9 @@ See `PROJECT_REPORT.md` for algorithms and complexity, `REVIEW2_DEMO.md` for the
 
 ## Project team
 
-- Shreya Sundli — 24BCE2546 ([shreyah101](https://github.com/shreyah101))
-- Pranakshay Agarwal — 24BCE2163
-- Shlok Shembhole — 24BAI0205
+- Shreya Sundli - 24BCE2546 ([shreyah101](https://github.com/shreyah101))
+- Pranakshay Agarwal - 24BCE2163
+- Shlok Shembhole - 24BAI0205
 
 Developed for the university Compiler Design project. The implementation and review
 material describe an educational analysis model and its tested limitations.
@@ -237,5 +237,5 @@ root directory, choose the Other framework preset and deploy with the committed
 configuration. Alternatively, with Vercel CLI authenticated to the intended
 account, run `vercel --prod`. Local Vercel project metadata is ignored by Git.
 Production deployment verified at https://flowguard-eight.vercel.app under
-Shreyah101�s projects. Live health, examples, UI assets, and analysis of the
+Shreyah101’s projects. Live health, examples, UI assets, and analysis of the
 slide/sanitizer/command/loop/function/syntax-error examples were checked successfully.
